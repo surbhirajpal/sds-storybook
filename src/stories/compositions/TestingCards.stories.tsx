@@ -4,11 +4,11 @@ import { Flex } from "layout";
 import { Button, ButtonGroup, Image, Text, TextHeading } from "primitives";
 import { IconActivity, IconClock, IconCode, IconCompass, IconSmile } from "icons";
 import { placeholder } from "images";
-import { ComponentProps, ReactNode } from "react";
+import { ComponentProps } from "react";
 
 const meta: Meta<typeof Card> = {
   component: Card,
-  title: "SDS Compositions/Cards",
+  title: "SDS Compositions/Cards Examples",
   parameters: { layout: "centered" },
 };
 export default meta;
@@ -21,8 +21,8 @@ export default meta;
  * - Variants: default, stroke, brand
  * - Configurable padding
  */
-export const StoryCard: StoryObj<ComponentProps<typeof Card> & { "[asset]": "none" | "icon" | "image"; "[interaction]": boolean; }> = {
-  name: "Card",
+export const ExampleCard: StoryObj<ComponentProps<typeof Card> & { "[asset]": "none" | "icon" | "image"; "[interaction]": boolean; }> = {
+  name: "Basic Card Example",
   args: {
     direction: "vertical",
     variant: "default",
@@ -62,8 +62,8 @@ export const StoryCard: StoryObj<ComponentProps<typeof Card> & { "[asset]": "non
 /**
  * PricingCard: Displays price points, features, and CTA buttons
  */
-export const StoryPricingCard: StoryObj<typeof PricingCard> = {
-  name: "Pricing Card",
+export const ExamplePricingCard: StoryObj<typeof PricingCard> = {
+  name: "Pricing Card Example",
   render: () => (
     <Flex container wrap gap="400" type="third" alignPrimary="center">
       {[1, 2, 3].map((i) => (
@@ -87,8 +87,8 @@ export const StoryPricingCard: StoryObj<typeof PricingCard> = {
 /**
  * ProductInfoCard: Displays product information with asset, description, price, rating
  */
-export const StoryProductInfoCard: StoryObj<typeof ProductInfoCard> = {
-  name: "Product Info Card",
+export const ExampleProductInfoCard: StoryObj<typeof ProductInfoCard> = {
+  name: "Product Info Card Example",
   render: () => (
     <Flex container wrap type="quarter" gap="400">
       {[1, 2, 3, 4].map((i) => (
@@ -107,8 +107,8 @@ export const StoryProductInfoCard: StoryObj<typeof ProductInfoCard> = {
 /**
  * ReviewCard: Shows user review with stars, body, and author
  */
-export const StoryReviewCard: StoryObj<typeof ReviewCard> = {
-  name: "Review Card",
+export const ExampleReviewCard: StoryObj<typeof ReviewCard> = {
+  name: "Review Card Example",
   render: () => (
     <Flex container wrap type="quarter" gap="400">
       {[1, 2, 3, 4].map((i) => (
@@ -129,8 +129,8 @@ export const StoryReviewCard: StoryObj<typeof ReviewCard> = {
 /**
  * StatsCard: Displays numeric statistics with optional icon
  */
-export const StoryStatsCard: StoryObj<typeof StatsCard> = {
-  name: "Stats Card",
+export const ExampleStatsCard: StoryObj<typeof StatsCard> = {
+  name: "Stats Card Example",
   render: () => (
     <Flex container wrap type="quarter" gap="400">
       <StatsCard icon={<IconCode size="40" />} stat="15.3k" description="Lines of Code" />
@@ -144,8 +144,8 @@ export const StoryStatsCard: StoryObj<typeof StatsCard> = {
 /**
  * TestimonialCard: Highlights a testimonial with author info
  */
-export const StoryTestimonialCard: StoryObj<typeof TestimonialCard> = {
-  name: "Testimonial Card",
+export const ExampleTestimonialCard: StoryObj<typeof TestimonialCard> = {
+  name: "Testimonial Card Example",
   render: () => (
     <Flex container wrap type="third" gap="400">
       {[1, 2, 3].map((i) => (
