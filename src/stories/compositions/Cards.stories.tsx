@@ -36,7 +36,7 @@ export const StoryCard: StoryObj<CardPlaygroundProps> = {
     direction: "vertical",
     padding: "600",
     variant: "stroke",
-    hasAsset: false,
+    hasAsset: true,
     hasInteraction: false,
   },
   argTypes: {
@@ -86,7 +86,7 @@ export const StoryCard: StoryObj<CardPlaygroundProps> = {
           onPress: () => alert("Card clicked!"),
         } : undefined}
       >
-        <div style={{ padding: "var(--sds-size-space-400)" }}>
+        <div>
           {children}
         </div>
       </Card>
