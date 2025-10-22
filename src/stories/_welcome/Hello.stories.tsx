@@ -26,7 +26,7 @@ export const StoryHello: StoryObj<{}> = {
             <TextHeading>Figma Simple Design System</TextHeading>
             <Text>
               Simple Design System (SDS) is a base design system that shows how
-              Figma’s Variables, Styles, Components, and Code Connect can be
+              Figma's Variables, Styles, Components, and Code Connect can be
               used alongside a React and CSS codebase to form a complete picture
               of a responsive web design system.
             </Text>
@@ -41,7 +41,7 @@ export const StoryHello: StoryObj<{}> = {
             </Text>
 
             <Text>
-              Whether you’re looking to use SDS to start a new project, or are
+              Whether you're looking to use SDS to start a new project, or are
               looking for examples of some common design systems best practices,
               you'll find tools inside this codebase and Figma file to steer you
               in the right direction.
